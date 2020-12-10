@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 
-class WidgetBuilder extends StatefulWidget {
+class WidgetStateBuilder extends StatefulWidget {
   final Widget child;
 
-  WidgetBuilder({Key key, this.child}) : super(key: key);
+  WidgetStateBuilder({Key key, this.child}) : super(key: key);
 
   final _WidgetBuilderState _wbs = _WidgetBuilderState();
 
@@ -15,7 +15,7 @@ class WidgetBuilder extends StatefulWidget {
   _WidgetBuilderState createState() => _wbs;
 }
 
-class _WidgetBuilderState extends State<WidgetBuilder> {
+class _WidgetBuilderState extends State<WidgetStateBuilder> {
   void rebuildWidget() {
     setState(() {});
   }
